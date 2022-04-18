@@ -1,0 +1,22 @@
+{
+  "name": "@vandeurenglenn/base-x",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/base-x.js",
+  "module": "src/base-x.js",
+  "scripts": {
+    "c": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "base",
+    "x",
+    "base-x",
+    "es"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.70.2"
+  }
+}
