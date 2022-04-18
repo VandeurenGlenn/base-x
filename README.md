@@ -1,11 +1,17 @@
 # base-x
 > module compatible base-x
+
+## install
+```sh
+npm i -S @vandeurenglenn/base-x
+```
+
 ## usage
 
 ```js
-const base = require('base-x')
+const base = require('@vandeurenglenn/base-x')
 // or
-import base from 'base-x'
+import base from '@vandeurenglenn/base-x'
 
 const base32 = base('abcdefghijklmnopqrstuvwxyz234567') // base32 Alphabet
 
