@@ -1,6 +1,6 @@
 {
   "name": "@vandeurenglenn/base-x",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/base-x.js",
   "type": "module",
