@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2018 The Bitcoin Core developers (base58.cpp)
 // Distributed under the MIT software license, see the accompanying
 // file LICENSE or http://www.opensource.org/licenses/mit-license.php.
-const base = ALPHABET => {
+const base = (ALPHABET: string): baseX => {
   if (ALPHABET.length >= 255) { throw new TypeError('Alphabet too long') }
   const BASE_MAP = new Uint8Array(256)
   for (let j = 0; j < BASE_MAP.length; j++) {
@@ -20,7 +20,7 @@ const base = ALPHABET => {
   const FACTOR = Math.log(BASE) / Math.log(256) // log(BASE) / log(256), rounded up
   const iFACTOR = Math.log(256) / Math.log(BASE) // log(256) / log(BASE), rounded up
 
-  const encode = source => {
+  const encode = (source: Uint8Array | ArrayBuffer): string => {
     if (source instanceof Uint8Array) {
     } else if (ArrayBuffer.isView(source)) {
       source = new Uint8Array(source.buffer, source.byteOffset, source.byteLength)
@@ -65,7 +65,8 @@ const base = ALPHABET => {
     for (; it2 < size; ++it2) { str += ALPHABET.charAt(b58[it2]) }
     return str
   }
-  const decodeUnsafe = source => {
+
+  const decodeUnsafe = (source: string): Uint8Array | undefined => {
     if (typeof source !== 'string') { throw new TypeError('Expected String') }
     if (source.length === 0) { return new Uint8Array() }
     let psz = 0
@@ -107,16 +108,18 @@ const base = ALPHABET => {
     }
     return vch
   }
-  const decode = string => {
+
+  const decode = (string: string): Uint8Array => {
     const buffer = decodeUnsafe(string)
     if (buffer) { return buffer }
     throw new Error('Non-base' + BASE + ' character')
   }
+
   return {
-    encode: encode,
-    decodeUnsafe: decodeUnsafe,
-    decode: decode
+    encode,
+    decodeUnsafe,
+    decode
   }
 }
 
-export default base
+export { base as default }

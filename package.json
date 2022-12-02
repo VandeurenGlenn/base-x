@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/base-x.js",
-  "module": "src/base-x.js",
+  "type": "module",
   "scripts": {
-    "c": "rollup -c",
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,6 +17,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "rollup": "^2.70.2"
+    "@rollup/plugin-typescript": "^10.0.1",
+    "rollup": "^2.70.2",
+    "tslib": "^2.4.1"
   }
 }

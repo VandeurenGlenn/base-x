@@ -1,4 +1,4 @@
-const base = require('./dist/base-x')
+import base from './dist/base-x.js'
 const base32 = base('abcdefghijklmnopqrstuvwxyz234567')
 
 // const uint8Array = new Uint8Array(2)

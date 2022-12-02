@@ -1,7 +1,12 @@
+import typescript from '@rollup/plugin-typescript';
+
 export default [{
-  input: ['./src/base-x.js'],
+  input: ['./src/base-x.ts'],
   output: [{
     dir: './dist',
-    format: 'cjs'
-  }]
+    format: 'es'
+  }],
+  plugins: [
+    typescript()
+  ]
 }]
