@@ -2,8 +2,11 @@
   "name": "@vandeurenglenn/base-x",
   "version": "1.1.0",
   "description": "",
-  "main": "dist/base-x.js",
+  "exports": {
+    ".": "./base-x.js"
+  },
   "type": "module",
+  "types": "./base-x.d.ts",
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"

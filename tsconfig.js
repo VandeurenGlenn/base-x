@@ -10,6 +10,7 @@ export default {
       "target": "latest"
   },
       "include": [
-      "./src/**/*"
+      "./src/**/*",
+      "./index.d.ts"
   ]
 }

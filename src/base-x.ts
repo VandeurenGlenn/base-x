@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2018 The Bitcoin Core developers (base58.cpp)
 // Distributed under the MIT software license, see the accompanying
 // file LICENSE or http://www.opensource.org/licenses/mit-license.php.
-const base = (ALPHABET: string): baseX => {
+const base = (ALPHABET: string):baseX => {
   if (ALPHABET.length >= 255) { throw new TypeError('Alphabet too long') }
   const BASE_MAP = new Uint8Array(256)
   for (let j = 0; j < BASE_MAP.length; j++) {
@@ -66,7 +66,7 @@ const base = (ALPHABET: string): baseX => {
     return str
   }
 
-  const decodeUnsafe = (source: string): Uint8Array | undefined => {
+  const decodeUnsafe = (source: string):Uint8Array | undefined => {
     if (typeof source !== 'string') { throw new TypeError('Expected String') }
     if (source.length === 0) { return new Uint8Array() }
     let psz = 0
@@ -109,7 +109,7 @@ const base = (ALPHABET: string): baseX => {
     return vch
   }
 
-  const decode = (string: string): Uint8Array => {
+  const decode = (string: string):Uint8Array => {
     const buffer = decodeUnsafe(string)
     if (buffer) { return buffer }
     throw new Error('Non-base' + BASE + ' character')

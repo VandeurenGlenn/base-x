@@ -3,7 +3,7 @@ import typescript from '@rollup/plugin-typescript';
 export default [{
   input: ['./src/base-x.ts'],
   output: [{
-    dir: './dist',
+    dir: './',
     format: 'es'
   }],
   plugins: [
