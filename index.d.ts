@@ -1,5 +1,5 @@
 /**
- *  string containging only given ALPHABET letters/numbers
+ *  string containing only given ALPHABET letters/numbers
  */
 type baseString = string;
 type baseX = {

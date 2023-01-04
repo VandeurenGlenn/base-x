@@ -31,7 +31,7 @@ const base = (ALPHABET: string):baseX => {
   const FACTOR = Math.log(BASE) / Math.log(256) // log(BASE) / log(256), rounded up
   const iFACTOR = Math.log(256) / Math.log(BASE) // log(256) / log(BASE), rounded up
 
-  const encode = (source: Uint8Array | ArrayBuffer): string => {
+  const encode = (source: Uint8Array | ArrayBuffer | number[]): string => {
     if (source instanceof Uint8Array) {
     } else if (ArrayBuffer.isView(source)) {
       source = new Uint8Array(source.buffer, source.byteOffset, source.byteLength)
