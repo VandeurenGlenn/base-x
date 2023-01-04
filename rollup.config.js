@@ -1,12 +1,17 @@
 import typescript from '@rollup/plugin-typescript';
 
 export default [{
-  input: ['./src/base-x.ts'],
+  input: ['./src/index.ts'],
   output: [{
     dir: './',
     format: 'es'
   }],
   plugins: [
-    typescript()
+    typescript({
+      "outDir": "./",
+      "allowJs": true,
+      "target": "es2022",
+      "declaration": true
+    })
   ]
 }]

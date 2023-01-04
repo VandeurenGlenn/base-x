@@ -1,3 +1,14 @@
+/**
+ *  string containing only given ALPHABET letters/numbers
+ */
+type baseString = string
+
+type baseX = {
+  encode: (uint8Array: Uint8Array) => baseString,
+  decode: (string: baseString) => Uint8Array,
+  decodeUnsafe: (string: baseString) => Uint8Array,
+}
+
 // base-x encoding / decoding
 // Copyright (c) 2018 base-x contributors
 // Copyright (c) 2014-2018 The Bitcoin Core developers (base58.cpp)
