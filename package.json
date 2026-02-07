@@ -1,6 +1,6 @@
 {
   "name": "@vandeurenglenn/base-x",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Fast, optimized, and compatible base-x encoding/decoding library.",
   "repository": {
     "type": "git",
