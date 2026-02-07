@@ -1,22 +1,38 @@
 {
   "name": "@vandeurenglenn/base-x",
   "version": "1.2.0",
-  "description": "",
+  "description": "Fast, optimized, and compatible base-x encoding/decoding library.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VandeurenGlenn/base-x.git"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "exports": {
-    ".": "./index.js"
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
   },
   "type": "module",
-  "types": "./index.d.ts",
   "scripts": {
     "bench": "node bench.js",
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "base",
-    "x",
     "base-x",
-    "es"
+    "base58",
+    "base64",
+    "base32",
+    "base16",
+    "encoder",
+    "decoder",
+    "codec",
+    "crypto",
+    "base"
   ],
   "author": "Vandeuren Glenn <vandeurenglenn@gmail.com>",
   "license": "MIT",

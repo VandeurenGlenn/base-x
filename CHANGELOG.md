@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.1.3] - 2026-02-07
+## [1.2.0] - 2026-02-07
 
 ### Added
 - **Power-of-2 Optimizations**: Implemented a specialized, high-performance encoding and decoding path for bases that are powers of 2 (Base16, Base32, Base64, etc.).
