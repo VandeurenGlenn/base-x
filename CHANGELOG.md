@@ -9,6 +9,9 @@ All notable changes to this project will be documented in this file.
   - Automatically detects if the alphabet length is a power of 2.
   - Switches from generic polynomial arithmetic to bitwise shifting and masking.
   - **Performance**: Achieves approximately 5x-7x faster encoding and decoding for compatible bases.
+- **RFC 4648 Compliance**: Added optional support for RFC 4648 standard encoding/decoding (padding, block-based logic) for power-of-2 bases.
+  - usage: `base(ALPHABET, { rfc4648: true })`
+- **License**: Added MIT License file.
 
 ### Changed
 - Refactored internal logic to support multiple encoding strategies while maintaining the existing API.
