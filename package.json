@@ -8,6 +8,7 @@
   "type": "module",
   "types": "./index.d.ts",
   "scripts": {
+    "bench": "node bench.js",
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,11 +18,11 @@
     "base-x",
     "es"
   ],
-  "author": "",
+  "author": "Vandeuren Glenn <vandeurenglenn@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-typescript": "^10.0.1",
-    "rollup": "^2.70.2",
-    "tslib": "^2.4.1"
+    "@rollup/plugin-typescript": "^12.3.0",
+    "rollup": "^4.57.1",
+    "tslib": "^2.8.1"
   }
 }

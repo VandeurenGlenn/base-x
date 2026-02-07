@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "moduleResolution":"NodeNext",
+    "module": "nodenext",
     "outDir": "./",
     "allowJs": true,
     "target": "es2022",
