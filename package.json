@@ -19,7 +19,7 @@
   "type": "module",
   "scripts": {
     "bench": "node bench.js",
-    "build": "rollup -c",
+    "build": "npx typescript",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -36,9 +36,7 @@
   ],
   "author": "Vandeuren Glenn <vandeurenglenn@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "@rollup/plugin-typescript": "^12.3.0",
-    "rollup": "^4.57.1",
-    "tslib": "^2.8.1"
+  "dependencies": {
+    "typescript": "^7.0.2"
   }
 }

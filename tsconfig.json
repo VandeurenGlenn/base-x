@@ -3,6 +3,7 @@
     "moduleResolution":"NodeNext",
     "module": "nodenext",
     "outDir": "./",
+    "rootDir": "./src",
     "allowJs": true,
     "target": "es2022",
     "declaration": true
